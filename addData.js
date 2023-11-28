@@ -8,13 +8,13 @@ if (clearFolders) deleteContents('target_directory');
 
 const list = allowlist ? 'allowlist' : 'droplist';
 
-const address1 = "Joe Bloggs \nMy House\nMy Road\nMy Town\nMy City\nN22 1HQ\nUK";
+const address1 = "Dr Alex Coach \n50 Commercial Street\nLondon\nE1 6LT";
 const fileName = extractSecondName(address1);
-const address2 = `Joe ${fileName} \nMy New House\nMy New Road\nMy New Town\nMy New City\nN22 2HQ\nUK`;
+const address2 = `Dr Alex ${fileName} \nMakers Academy\nZetland House\nLondon\nEC2A 4HJ`;
 
 function extractSecondName(str) {
   const words = str.split(/\s+/);
-  return words[1];
+  return words[2];
 }
 
 
