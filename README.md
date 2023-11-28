@@ -10,7 +10,7 @@ Some test without original data
 
 We are starting test planning with some distinct main considerations:
 1. How valid data that 'works' within the program is handled in terms of how it is 'allowed' or 'dropped' and what is passed into `finals`.
-2. How different data is processed and it is does work as expected.
+2. How different data is processed and if it works as expected.
 3. How the program behaves with more than one name file.
 4. How the program deals with multiple entries with the same surname referring to different people.
 
@@ -28,5 +28,9 @@ To test things such as addresses of different lengths, different postcade format
 
 ### More than one file being processed at a time with different outcomes.
 
+Testing multiple names and situations all at once rather than the individual focussed tests to reproduce a more 'real world' scenario for testing.
+
 ### Mulitple entries with the same surname
+
+This includes have multiple people with the same surname alongside each other in the same directory, e.g. originals, but also the possibility of having people with the same surname each in the different source directories.
 

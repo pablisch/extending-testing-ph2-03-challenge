@@ -8,18 +8,18 @@ if (clearFolders) deleteContents('target_directory');
 
 const list = allowlist ? 'allowlist' : 'droplist';
 
-const name = 'Joe Bloggs'
+const name = 'Sam Green'
 
-const add1Line1 = 'My House';
+const add1Line1 = '';
 const add1Line2 = 'My Road';
-const add1Line3 = '';
+const add1Line3 = 'My Town';
 const add1Line4 = 'My City';
 const add1Line5 = 'P1 1PP';
 const add1Line6 = '';
 
-const add2Line1 = 'My New House';
+const add2Line1 = '';
 const add2Line2 = 'My New Road';
-const add2Line3 = '';
+const add2Line3 = 'My New Town';
 const add2Line4 = 'My New City';
 const add2Line5 = 'P1 2PP';
 const add2Line6 = '';
@@ -54,6 +54,8 @@ function extractSecondName(str) {
   return words[1];
 }
 
+
 fs.writeFileSync(`./target_directory/originals/${fileName}`, address1);
 fs.writeFileSync(`./target_directory/updates/${fileName}`, address2);
 fs.writeFileSync(`./target_directory/${list}`, fileName);
+// fs.writeFileSync(`./target_directory/${list}`, 'Bloggs');

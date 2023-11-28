@@ -13,6 +13,7 @@
     "fs": "^0.0.1-security"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.3.1"
+    "@faker-js/faker": "^8.3.1",
+    "jest": "^29.7.0"
   }
 }

@@ -17,7 +17,7 @@ function extractSecondName(str) {
   return words[2];
 }
 
-// fs.writeFileSync(`./target_directory/originals/${fileName}`, address1);
+fs.writeFileSync(`./target_directory/originals/${fileName}`, address1);
 
 fs.writeFileSync(`./target_directory/updates/${fileName}`, address2);
 

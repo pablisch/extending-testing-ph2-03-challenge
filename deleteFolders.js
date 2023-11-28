@@ -17,7 +17,7 @@ function deleteContents(directoryName) {
       }
     });
 
-    console.log(`Cleared contents of directory: ${directoryPath}`);
+    // console.log(`Cleared contents of directory: ${directoryPath}`);
 
     // Delete the 'finals' directory within the specified directory
     const finalsDirectory = path.join(directoryPath, 'finals');
@@ -27,10 +27,10 @@ function deleteContents(directoryName) {
 
       // After deleting contents, remove 'finals' directory itself
       fs.rmdirSync(finalsDirectory);
-      console.log(`Deleted 'finals' directory within: ${directoryPath}`);
+      // console.log(`Deleted 'finals' directory within: ${directoryPath}`);
     }
   } else {
-    console.log(`Directory does not exist or is not a directory: ${directoryPath}`);
+    // console.log(`Directory does not exist or is not a directory: ${directoryPath}`);
   }
 }
 
@@ -41,7 +41,7 @@ const directoryToClear = process.argv[2];
 if (directoryToClear) {
   deleteContents(directoryToClear);
 } else {
-  console.log('Please provide the path of the directory to clear as a command-line argument.');
+  // console.log('Please provide the path of the directory to clear as a command-line argument.');
 }
 
 module.exports = deleteContents;
