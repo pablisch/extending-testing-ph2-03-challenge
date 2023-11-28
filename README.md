@@ -24,4 +24,9 @@ A set of tests using the provided data set for each combination of originals pre
 
 ### Different name and address data
 
-To test things
+To test things such as addresses of different lengths, different postcade formats, name formats, etc.
+
+### More than one file being processed at a time with different outcomes.
+
+### Mulitple entries with the same surname
+

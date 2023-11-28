@@ -1,7 +1,7 @@
 const fs = require('fs');
 // const path = require('path');
 const deleteContents = require('./deleteFolders')
-const allowlist = true; // set false for droplist
+const allowlist = false; // set false for droplist
 const clearFolders = true;
 
 if (clearFolders) deleteContents('target_directory');
@@ -17,9 +17,12 @@ function extractSecondName(str) {
   return words[2];
 }
 
+// fs.writeFileSync(`./target_directory/originals/${fileName}`, address1);
 
-fs.writeFileSync(`./target_directory/originals/${fileName}`, address1);
 fs.writeFileSync(`./target_directory/updates/${fileName}`, address2);
+
+// Line below creates droplist or allowlist
 fs.writeFileSync(`./target_directory/${list}`, fileName);
+// fs.writeFileSync(`./target_directory/${list}`, "Bloggs");
 
 
